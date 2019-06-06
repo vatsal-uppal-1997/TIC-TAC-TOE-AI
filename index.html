@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<title>
+			CROSS ZERO NIBBA
+		</title>
+		<link rel="stylesheet" type="text/css" href="styles/styles.css">
+	</head>
+	<body>
+		<div class="container">
+			<h3 id="turn" style="text-align: center">Player 1's Turn</h3>
+			<div class="row">
+				<div onclick="select('box-1', 1)" id="box-1" class="element"></div>
+				<div onclick="select('box-2', 1)" id="box-2" class="element"></div>
+				<div onclick="select('box-3', 1)" id="box-3" class="element"></div>
+			</div>
+			<div class="row">
+				<div onclick="select('box-4', 1)" id="box-4" class="element"></div>
+				<div onclick="select('box-5', 1)" id="box-5" class="element"></div>
+				<div onclick="select('box-6', 1)" id="box-6" class="element"></div>
+			</div>
+			<div class="row">
+				<div onclick="select('box-7', 1)" id="box-7" class="element"></div>
+				<div onclick="select('box-8', 1)" id="box-8" class="element"></div>
+				<div onclick="select('box-9', 1)" id="box-9" class="element"></div>
+			</div>
+		</div>
+		<button onclick="event.stopPropagation(); console.log('aaa');clearAll()">Play Again</button>
+		<button onclick="machine()">Against Machine</button>
+		<script src="scripts/brain.js"></script>
+		<script src="scripts/main.js"></script>
+	</body>
+</html>
